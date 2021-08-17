@@ -1,16 +1,20 @@
-# flutter_elastic_animation
-
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- An example of elastic animation.
 
-A few resources to get you started if this is your first Flutter project:
+- [A collection of common animation curves](https://api.flutter.dev/flutter/animation/Curves-class.html)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## How To Use
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+ElasticAnimationWidget(
+    child: Container(width: 100, height: 100, color: Colors.green),
+    duration: Duration(milliseconds: 3000),
+    tweenLevel: TweenLevel.LARGE,
+    repeat: true,
+    reverse: true,
+);
+```
+<p>
+    <img src="https://github.com/HadesPTIT/flutter_elastic_animation/blob/develop/sample/sample_anim.gif" width="200", height="282"/>
+</p>
